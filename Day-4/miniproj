@@ -1,0 +1,36 @@
+
+using System;
+namespace miniproj
+{
+  class Mobile
+  {
+    int price;
+    string storage;
+    string colour;
+    
+    public void calling()
+    {
+      Console.WriteLine("Voice msg");
+    }
+    public void music()
+    {
+      Console.WriteLine("Music is playing");
+    }
+    
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("details of my phone");
+      Mobile m = new Mobile();
+      m.price = 10000;
+      m.storage = "16gb";
+      m.colour = "Green";
+      Console.WriteLine(m.price);
+      Console.WriteLine(m.storage);
+      Console.WriteLine(m.colour);
+      
+      m.calling();
+      m.music();
+      
+    }
+  }
+}
