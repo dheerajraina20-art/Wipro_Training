@@ -1,0 +1,25 @@
+selector {
+    property: value;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+    text-align: justify;
+    text-transform: uppercase;
+}
