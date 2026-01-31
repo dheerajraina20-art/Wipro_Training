@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #4e73df, #1cc88a);
+  color: white;
+  display: flex;
+}
+
+table tbody tr:hover {
+  background-color: #d1ecf1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+footer p {
+  margin: 0;
+}
