@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spring Flowers School</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to right, #4e73df, #1cc88a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+}
+
+.hero a {
+  padding: 12px 25px;
+  background: yellow;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Spring Flowers School 🌸</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#features">Facilities</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Shaping Bright Futures</h2>
+  <p>Quality education with modern facilities</p>
+  <a href="#about">Explore More</a>
+</section>
+
+<section id="about" class="about">
+  <h2>About Our School</h2>
+  <p>
+    Spring Flowers School is committed to providing high-quality education
+    that nurtures creativity, knowledge, and character. We focus on academic
+    excellence along with extracurricular growth to shape confident and
+    responsible future leaders.
+  </p>
+</section>
+
+<section id="features" class="features">
+  <div class="card">
+    <h3>Smart Classrooms</h3>
+    <p>Digital learning with interactive boards.</p>
+  </div>
+  <div class="card">
+    <h3>Sports Facilities</h3>
+    <p>Encouraging physical fitness and teamwork.</p>
+  </div>
+  <div class="card">
+    <h3>Science Labs</h3>
+    <p>Hands-on practical learning experience.</p>
+  </div>
+</section>
+
+<footer id="contact">
+  <p>© 2026 Spring Flowers School | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
