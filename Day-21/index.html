@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #eventDetails {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 300px;
+        }
+        button {
+            margin: 5px;
+        }
+        .selected {
+            background-color: #f0f0f0;
+        }
+        </style>
+</head>
+<body>
+    <h2>Society Event Registration</h2>
+
+  <ul id="eventList"></ul>
+
+  <div id="eventDetails">
+    <h3 id="eventTitle"></h3>
+    <p id="eventDesc"></p>
+    <p>Participants: <span id="count">0</span></p>
+
+    <button id="registerBtn">Register</button>
+    <button id="unregisterBtn">Unregister</button>
+  </div>
+
+  <button id="addEventBtn">Add New Event</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
