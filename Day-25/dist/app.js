@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Vehicle_1 = require("./models/Vehicle");
+const RentalService_1 = require("./services/RentalService");
+const service = new RentalService_1.RentalService();
+service.addVehicle({ id: 1, brand: "Toyota", type: Vehicle_1.VehicleType.Car, rentPerDay: 2000, isAvailable: true });
+service.addVehicle({ id: 2, brand: "Yamaha", type: Vehicle_1.VehicleType.Bike, rentPerDay: 800, isAvailable: true });
+service.addCustomer({ id: 1, name: "Dheeraj", licenseNumber: "DL12345" });
+service.addCustomer({ id: 2, name: "Rahul", licenseNumber: "DL67890" });
+console.log(service.rentVehicle(1, 1, 3));
+console.log("Available Vehicles:", service.listAvailableVehicles());
+console.log("Active Rentals:", service.listActiveRentals());
+console.log(service.returnVehicle(1));
